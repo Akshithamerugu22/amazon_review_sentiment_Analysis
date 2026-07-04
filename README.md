@@ -38,7 +38,7 @@ Companies collect thousands of product reviews but can't read them all manually.
 ├── social_media_sentiment_analysis.ipynb   # Full EDA, NLP, and model training notebook
 ├── cleaned_pipe.csv                        # Cleaned, pipe-delimited dataset used for SQL + Power BI
 ├── queries.sql                             # 9 business-question SQL queries
-├── dashboard.pbix                          # Power BI dashboard (Overview + Product Deep-Dive pages)
+├── dashboard.pbix                          # Power BI dashboard (Overview )
 └── README.md
 ```
 
@@ -147,16 +147,11 @@ These queries are the direct source for every KPI and chart in the Power BI dash
 
 Two-page interactive report (`dashboard.pbix`):
 
-**Page 1 — Overview**
+**Page  — Overview**
 - Slicers: Year, Sentiment, Score, Product ID
 - KPI cards: Total Reviews, Average Rating, % Positive, % Negative
 - Sentiment distribution donut, year-wise review trend line
 - Top 10 most-reviewed products, highest-rated products table, most-negative-reviews chart, top positive-review users table
-
-**Page 2 — Product Deep-Dive** (drill-through from any product bar on Page 1)
-- Selected-product KPIs: Total Reviews, Average Rating, Avg Helpfulness, First Reviewed
-- Score distribution, sentiment split (auto-filtered to the selected product)
-- Individual reviews table with full review text on tooltip
 
 ## Key Insights
 
